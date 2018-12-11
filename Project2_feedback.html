@@ -1,0 +1,267 @@
+<html>
+  <head>
+    <title>Report 2 by Mohammed SIMJEE</title>
+    <style>
+      body {
+	  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	  font-size: 18px;
+	  line-height: 1.25em;
+	  margin: 4em 10%;
+      }
+
+      td, th {
+	  padding: 1ex;
+	  vertical-align: top;
+	  font-size: 1em;
+      }
+
+      td {
+	  color: #999;
+      }
+
+      td.selected {
+	  background-color: #ccf;
+	  border-radius: 10px;
+	  color: #000;
+      }
+
+      td.notes {
+	  color: #000;
+      }
+
+      h1 {
+	font-size: 2em;
+	line-height: 2ex;
+      }
+
+      table#schema {
+	  width: 100%;
+      }
+
+      th.category {
+	  width: 10%;
+      }
+
+      th.level {
+	  width: 18%;
+      }
+
+      th.mark {
+	  width: 18%;
+      }
+
+      tr.subcategory th {
+	  border-top: 2px solid black;
+      }
+
+      th.overall {
+	  text-align: left;
+      }
+
+      span.mark {
+	  font-weight: bold;
+	  color: #c00;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Report 2 by Mohammed SIMJEE</h1>
+    <table id="schema">
+      <tr>
+	<th class="category"></th>
+	<th class="level">A</th>
+	<th class="level">B</th>
+	<th class="level">C/D</th>
+	<th class="level">E/F</th>
+	<th class="mark">Notes</th>
+      </tr>
+      
+      
+      <tr class="subcategory">
+	<th colspan="6">Scientific writing</th>
+      </tr>
+      
+      <tr>
+	<th>Report layout</th> 
+  
+	<td class="selected">Divided correctly into sections. Equations and diagrams used as appropriate. Informative title.</td>
+  
+	<td >All sections present, but some information in the wrong place. Equations and diagrams unclear or not used to best effect.</td>
+  
+	<td >Disorganised and missing diagrams and equations to the point that the report is difficult to follow.</td>
+  
+	<td >Key sections missing. Title missing or vague.</td>
+   
+	<td class="notes">Sensible title, good sectioning, nice bibliography and in-text references. In some cases not enough information given to locate the references; still, good work.
+    <span class="mark">7.0</span></td>
+      </tr>
+      
+      
+      <tr>
+	<th>Writing style</th> 
+  
+	<td class="selected">Clear argument, easy for the reader to follow. Minimal grammatical or spelling errors.</td>
+  
+	<td >Some errors, but generally clear exposition.</td>
+  
+	<td >Sometimes unclear.</td>
+  
+	<td >Incoherent.</td>
+   
+	<td class="notes">Clear and easy to follow, with only a few typos.
+    <span class="mark">7.5</span></td>
+      </tr>
+      
+       
+      
+      <tr class="subcategory">
+	<th colspan="6">Background and context</th>
+      </tr>
+      
+      <tr>
+	<th>Scientific background</th> 
+  
+	<td >Clear description of the scientific/mathematical problem to be solved. Appropriate references.</td>
+  
+	<td class="selected">Accurate description of the problem, but with minor mistakes or difficult for an unfamiliar reader to understand. Some appropriate references.</td>
+  
+	<td >Partially accurate or incomplete description of the problem. Limited references.</td>
+  
+	<td >Inaccurate, unreferenced problem description.</td>
+   
+	<td class="notes">Minimal but covers most of the important points.
+    <span class="mark">6.0</span></td>
+      </tr>
+      
+      
+      <tr>
+	<th>Algorithmic background</th> 
+  
+	<td >Clear description of the algorithm(s) chosen. Appropriate references.</td>
+  
+	<td >Accurate description of the algorithm, but with minor mistakes or difficult for an unfamiliar reader to understand. Some appropriate references.</td>
+  
+	<td class="selected">Partially accurate or incomplete description of the algorithm. Limited references.</td>
+  
+	<td >Inaccurate, unreferenced algorithm description.</td>
+   
+	<td class="notes">Again not quite enough here. Good to hear you used the LM algorithm, but just a hint of what that is would have been nice.
+    <span class="mark">5.0</span></td>
+      </tr>
+      
+       
+      
+      <tr class="subcategory">
+	<th colspan="6">Code</th>
+      </tr>
+      
+      <tr>
+	<th>Output</th> 
+  
+	<td class="selected">All code runs and produces correct results.</td>
+  
+	<td >Runs and produces results, but with minor inaccuracies.</td>
+  
+	<td >Runs but produces incorrect or incomplete results for some input.</td>
+  
+	<td >Does not run or produces no useful output.</td>
+   
+	<td class="notes">Clear, attractive, well-labelled plots: very well done. Incidentally, you guessed the units of diffracted intensity wrong but this was still a very sensible guess &ndash; well done!
+    <span class="mark">8.0</span></td>
+      </tr>
+      
+      
+      <tr>
+	<th>Coding style</th> 
+  
+	<td class="selected">Well organised, easy to read and follow. Commented. Sensible variable names.</td>
+  
+	<td >Fairly easy to read, but unclear at some points.</td>
+  
+	<td >Poorly organised. Readable only if you know what it’s meant to do.</td>
+  
+	<td >Incomprehensible.</td>
+   
+	<td class="notes">Easy to read, good variable names, sensible comments.
+    <span class="mark">8.0</span></td>
+      </tr>
+      
+      
+      <tr>
+	<th>Implementation</th> 
+  
+	<td >Appropriate programming constructs used. Code is efficient without sacrificing readability or reliability.</td>
+  
+	<td class="selected">Programming constructs mostly sensible, but in some cases inelegant or inefficient.</td>
+  
+	<td >Inappropriate choices of programming constructs in some places. Overly long or inefficient stretches of code.</td>
+  
+	<td >Entirely inappropriate program flow (e.g., large chunks of repeated code).</td>
+   
+	<td class="notes">In some places you wrote out in full what would have better been done as a loop. But mostly just fine.
+    <span class="mark">6.5</span></td>
+      </tr>
+      
+       
+      
+      <tr class="subcategory">
+	<th colspan="6">Methodology and discussion</th>
+      </tr>
+      
+      <tr>
+	<th>Results</th> 
+  
+	<td class="selected">Suitable test cases chosen to demonstrate all relevant strengths and weakness of the code.</td>
+  
+	<td >Test cases chosen to illustrate many important features.</td>
+  
+	<td >Test cases only partially address the problem as stated.</td>
+  
+	<td >Results absent or incorrect.</td>
+   
+	<td class="notes">Good to see two different stable sets of parameters, and a discussion of the difference between them.
+    <span class="mark">7.5</span></td>
+      </tr>
+      
+      
+      <tr>
+	<th>Discussion</th> 
+  
+	<td class="selected">Detailed assessment of the strengths and weaknesses of the code, with explanations.</td>
+  
+	<td >Assessment of strengths and weaknesses with some explanation.</td>
+  
+	<td >Incomplete assessment of strengths and weaknesses with little explanation.</td>
+  
+	<td >Discussion tautological or absent.</td>
+   
+	<td class="notes">I especially liked your exploration of how the fitted values depended on the initial guesses: this was very clear and easy to understand.
+    <span class="mark">8.0</span></td>
+      </tr>
+      
+      
+      <tr>
+	<th>Conclusions and further work</th> 
+  
+	<td >Accurate summary of achievements and limitations of the project. Proposed future work clearly addresses the issues identified.</td>
+  
+	<td class="selected">Accurate summary of the results of the project. Some sensible suggestions for future work.</td>
+  
+	<td >Partial summary of results. Discussion of future work limited.</td>
+  
+	<td >Incomplete or inaccurate summary. Future work absent or entirely unconvincing.</td>
+   
+	<td class="notes">Unfortunately a bit too vague. I don't quite agree that the dependence on the initial guess is evidence of a massive flaw. No real suggestions for future work.
+    <span class="mark">6.0</span></td>
+      </tr>
+      
+       
+       
+      <tr class="subcategory">
+	<th colspan="5"></th>
+	<th class="overall"> This is a very good report, and almost an excellent one. You wrote good code and discovered some interesting results, but to do even better you need to discuss their significance in just a bit more detail. <span class="mark">70% A</span></th>
+      </tr>
+    </table>
+  </body>
+</html>
